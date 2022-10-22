@@ -7,7 +7,7 @@ while True:
     #imagem = cv.imread("chicken/test/TDFAKEMSPE9G.jpg")
     _, imagem = camera.read()
     gray = cv.cvtColor(imagem, cv.COLOR_BGR2GRAY)
-    objetos = cascade.detectMultiScale(gray, 1.25, 5)
+    objetos = cascade.detectMultiScale(gray, 6, 5)
 
     for (x,y,w,h) in objetos:
         cv.rectangle(imagem, (x,y),(x+w,y+h),(0,0,255),2)
