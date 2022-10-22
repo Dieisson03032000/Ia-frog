@@ -1,6 +1,6 @@
 import cv2 as cv
 
-camera = cv.VideoCapture("video_teste.mp4")
+camera = cv.VideoCapture("video4.mp4")
 #2IH2F7SXSTFS.jpg
 cascade = cv.CascadeClassifier("treinamento/cascade.xml")
 while True:
